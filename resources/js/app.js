@@ -35,7 +35,12 @@ if (token) {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
-window.Vue = require('vue');
+import Vue from 'vue'
+import VueTailwind from 'vue-tailwind'
+
+Vue.use(VueTailwind)
+
+//window.Vue = require('vue');
 
 /**
  * The following block of code may be used to automatically register your
